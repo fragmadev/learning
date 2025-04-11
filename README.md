@@ -1,338 +1,104 @@
-🖥 HTML - Comandi di base
-Strutturazione di una pagina HTML
-html
-Copia
-Modifica
+# Comandi di base per HTML, CSS e JavaScript
 
-<!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il titolo della pagina</title>
-  </head>
-  <body>
-    <!-- Contenuti della pagina -->
-  </body>
-</html>
-Creazione di elementi di contenuto
-Intestazione:
+## HTML
 
-html
-Copia
-Modifica
+### Struttura di base
 
-<h1>Titolo principale</h1>
-<h2>Sottotitolo</h2>
-Paragrafo:
+- `<!DOCTYPE html>`: Dichiarazione del tipo di documento HTML5
+- `<html>`: Elemento radice di un documento HTML
+- `<head>`: Contiene meta-informazioni sul documento
+- `<title>`: Specifica il titolo del documento (visualizzato nella barra del titolo del browser)
+- `<body>`: Contiene il contenuto visibile del documento
 
-html
-Copia
-Modifica
+### Elementi di testo
 
-<p>Questo è un paragrafo di testo.</p>
-Immagine:
+- `<h1>` - `<h6>`: Intestazioni di diversi livelli
+- `<p>`: Paragrafo
+- `<a>`: Collegamento ipertestuale
+- `<img>`: Immagine
+- `<ul>`: Elenco non ordinato
+- `<ol>`: Elenco ordinato
+- `<li>`: Elemento di un elenco
+- `<span>`: Contenitore inline generico
+- `<div>`: Contenitore a blocchi generico
 
-html
-Copia
-Modifica
-<img src="percorso/immagine.jpg" alt="Descrizione immagine">
-Link:
+### Elementi di modulo
 
-html
-Copia
-Modifica
-<a href="https://www.esempio.com">Visita il sito</a>
-Form
-Campo di input:
+- `<form>`: Modulo HTML per l'input dell'utente
+- `<input>`: Campo di input di diversi tipi (testo, password, ecc.)
+- `<textarea>`: Area di testo a più righe
+- `<button>`: Pulsante cliccabile
+- `<select>`: Elenco a discesa
+- `<option>`: Opzione in un elenco a discesa
 
-html
-Copia
-Modifica
-<input type="text" placeholder="Inserisci il tuo nome">
-Bottone:
+## CSS
 
-html
-Copia
-Modifica
-<button>Clicca qui</button>
-Elementi semantici
-html
-Copia
-Modifica
+### Selettori
 
-<header>
-  <nav>Menu di navigazione</nav>
-</header>
-<main>
-  <section>
-    <h2>Sezione principale</h2>
-    <p>Contenuto della sezione</p>
-  </section>
-</main>
-<footer>
-  <p>Footer del sito</p>
-</footer>
-🎨 CSS - Selettori e Proprietà
-Selettori base
-Selettore universale:
+- `*`: Selettore universale (seleziona tutti gli elementi)
+- `element`: Seleziona elementi in base al nome del tag (ad es. `p`, `div`)
+- `.class`: Seleziona elementi in base al nome della classe
+- `#id`: Seleziona un elemento in base all'ID
+- `element1 element2`: Seleziona `element2` che sono discendenti di `element1`
 
-css
-Copia
-Modifica
+### Proprietà di testo
 
-- {
-  margin: 0;
-  padding: 0;
-  }
-  Selettore per tag:
+- `color`: Colore del testo
+- `font-size`: Dimensione del testo
+- `font-family`: Tipo di carattere
+- `text-align`: Allineamento del testo
+- `text-decoration`: Decorazione del testo (sottolineato, ecc.)
 
-css
-Copia
-Modifica
-h1 {
-font-size: 2em;
-}
-Selettore per classi:
+### Proprietà di box model
 
-css
-Copia
-Modifica
-.container {
-width: 100%;
-margin: 0 auto;
-}
-Selettore per ID:
+- `width`: Larghezza di un elemento
+- `height`: Altezza di un elemento
+- `padding`: Spazio interno tra il contenuto e il bordo
+- `border`: Bordo di un elemento
+- `margin`: Spazio esterno attorno a un elemento
 
-css
-Copia
-Modifica
-#header {
-background-color: blue;
-}
-Layout e box model
-Modifica larghezza e altezza:
+### Proprietà di layout
 
-css
-Copia
-Modifica
-.container {
-width: 100%;
-height: 500px;
-}
-Padding e margini:
+- `display`: Tipo di visualizzazione di un elemento (blocco, inline, ecc.)
+- `position`: Posizionamento di un elemento (statico, relativo, assoluto, ecc.)
+- `float`: Posizionamento di un elemento a sinistra o a destra
+- `grid`: Sistema di layout a griglia
+- `flexbox`: Sistema di layout flessibile
 
-css
-Copia
-Modifica
-p {
-padding: 20px;
-margin: 10px;
-}
-Colori e font
-Colore del testo:
+## JavaScript
 
-css
-Copia
-Modifica
-h1 {
-color: #333;
-}
-Font personalizzati:
+### Variabili e tipi di dati
 
-css
-Copia
-Modifica
-body {
-font-family: 'Arial', sans-serif;
-}
-Flexbox e Grid
-Flexbox:
+- `var`, `let`, `const`: Dichiarazione di variabili
+- `string`, `number`, `boolean`, `object`, `array`, `null`, `undefined`: Tipi di dati
 
-css
-Copia
-Modifica
-.container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-Grid:
+### Operatori
 
-css
-Copia
-Modifica
-.grid-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-}
-⚡ JavaScript - Manipolazione del DOM e Eventi
-Accesso agli elementi
-Selezionare un elemento:
+- `+`, `-`, `*`, `/`, `%`: Operatori aritmetici
+- `=`, `==`, `===`, `!=`, `!==`: Operatori di assegnazione e confronto
+- `&&`, `||`, `!`: Operatori logici
 
-javascript
-Copia
-Modifica
-const header = document.querySelector('header');
-Modificare il contenuto di un elemento:
+### Strutture di controllo
 
-javascript
-Copia
-Modifica
-header.textContent = 'Nuovo Titolo';
-Eventi
-Aggiungere un evento a un bottone:
+- `if`, `else if`, `else`: Istruzioni condizionali
+- `for`, `while`, `do...while`: Cicli
+- `switch`, `case`, `default`: Istruzioni di selezione
 
-javascript
-Copia
-Modifica
-const button = document.querySelector('button');
-button.addEventListener('click', function() {
-alert('Hai cliccato il bottone!');
-});
-Funzioni
-Dichiarazione di una funzione:
+### Funzioni
 
-javascript
-Copia
-Modifica
-function saluta() {
-console.log('Ciao!');
-}
-Funzione con parametro:
+- `function`: Dichiarazione di una funzione
+- `return`: Restituisce un valore da una funzione
+- `() => {}`: Funzioni freccia (arrow functions)
 
-javascript
-Copia
-Modifica
-function saluta(nome) {
-console.log('Ciao, ' + nome + '!');
-}
-saluta('Santino');
-Manipolazione degli stili
-Modificare lo stile di un elemento:
+### Manipolazione del DOM
 
-javascript
-Copia
-Modifica
-const box = document.querySelector('.box');
-box.style.backgroundColor = 'red';
-🛠 TypeScript - Tipi e Sintassi
-Dichiarazione di variabili
-Tipi di variabili:
+- `document.getElementById()`, `document.querySelector()`, `document.querySelectorAll()`: Seleziona elementi HTML
+- `element.innerHTML`, `element.textContent`: Modifica il contenuto di un elemento
+- `element.style.property`: Modifica lo stile di un elemento
+- `element.addEventListener()`: Aggiunge un gestore di eventi a un elemento
 
-typescript
-Copia
-Modifica
-let nome: string = 'Santino';
-let eta: number = 25;
-let attivo: boolean = true;
-Funzioni
-Funzione con tipo di ritorno:
+### Eventi
 
-typescript
-Copia
-Modifica
-function somma(a: number, b: number): number {
-return a + b;
-}
-Funzione opzionale con parametro:
+- `click`, `mouseover`, `mouseout`, `keydown`, `keyup`, `submit`: Eventi comuni
 
-typescript
-Copia
-Modifica
-function saluta(nome: string, saluto?: string): void {
-console.log(`${saluto ? saluto : 'Ciao'}, ${nome}`);
-}
-saluta('Santino');
-Classi
-Creazione di una classe:
-
-typescript
-Copia
-Modifica
-class Persona {
-nome: string;
-eta: number;
-
-constructor(nome: string, eta: number) {
-this.nome = nome;
-this.eta = eta;
-}
-
-saluta(): void {
-console.log(`Ciao, sono ${this.nome} e ho ${this.eta} anni.`);
-}
-}
-🧩 Angular - Sintassi e Direttive
-Direttive di Struttura
-\*ngIf:
-
-html
-Copia
-Modifica
-
-<div *ngIf="isVisible">Questo div è visibile se isVisible è true</div>
-*ngFor:
-
-html
-Copia
-Modifica
-
-<ul>
-  <li *ngFor="let item of items">{{ item }}</li>
-</ul>
-Binding
-Binding bidirezionale:
-
-html
-Copia
-Modifica
-<input [(ngModel)]="nome">
-Binding unidirezionale (property binding):
-
-html
-Copia
-Modifica
-<img [src]="imageUrl" alt="Immagine dinamica">
-Event binding:
-
-html
-Copia
-Modifica
-<button (click)="onClick()">Clicca</button>
-Componente
-Definizione di un componente:
-
-typescript
-Copia
-Modifica
-import { Component } from '@angular/core';
-
-@Component({
-selector: 'app-mio-componente',
-template: '<h1>{{ titolo }}</h1>',
-styleUrls: ['./mio-componente.component.css']
-})
-export class MioComponente {
-titolo: string = 'Benvenuto!';
-}
-🔄 Git - Gestione versioni
-Aggiungere, commettere e caricare file su GitHub
-Aggiungi i file:
-
-bash
-Copia
-Modifica
-git add .
-Fai il commit:
-
-bash
-Copia
-Modifica
-git commit -m "Descrizione del cambiamento"
-Carica su GitHub:
-
-bash
-Copia
-Modifica
-git push origin main
+Spero che questo codice Markdown ti sia utile!
